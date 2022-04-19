@@ -44,7 +44,7 @@ footer p{
 .header_nav{
     width: auto;
     height: 80px;
-    background-color: black;
+    background-color: blue;
     display: flex;
     justify-content: space-between;
 }
