@@ -3,6 +3,20 @@
     box-sizing: border-box;
 }
 
+.img:hover{
+    transform: scale(1.05);
+    transition: all 1s;
+}
+
+.img{
+    border-radius: 9px;
+    box-shadow: 0 0 10px grey;
+}
+
+.perfume{
+    border-radius: 7px;
+}
+
 
 footer{
     border: 2px solid black;
