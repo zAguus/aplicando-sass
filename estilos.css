@@ -1,10 +1,66 @@
 *{
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-image: linear-gradient(grey , white , black);
+.itemsdelnav{
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cuerpo{
+    background-color: grey;
+}
+
+.nav-link{
+    animation-name: aparecer;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+
+.logodelnav{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    animation-name: aparecer;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+
+.contenedor_padre{
+    background-size: cover;
+    justify-content: center;
+    background-position: center;
+    align-items: center;
+    height: 80%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.imgcarousel{
+    width: 1440px;
+    height: 500px;
+}
+
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-item{
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform .4s ease-in-out;
+    height: 500px;
 }
 
 .img:hover{
@@ -23,15 +79,13 @@ body{
 
 
 footer{
-    border: 2px solid black;
-    margin-top: 10px;
     text-align: center;
-    background-color: black;
-    height: 70px;
+    background-color: rgb(32, 30, 30);
+    height: 135px;
 }
 
 footer i{
-    margin-top: 15px ;
+    margin-top: 35px ;
     font-size: 25px;
     color: white;
     margin-left: 5px;
@@ -127,6 +181,7 @@ footer p{
     animation-duration: 2s;
     animation-delay: 0s;
     animation-iteration-count: 1;
+    background-color: grey;
 }
 
 .imagen_logo{
@@ -232,6 +287,24 @@ footer p{
     background-position: center;
     background-size: cover;
 
+}
+
+
+@media only screen and (max-width: 576px){
+    .lista_nav{
+        flex-direction: column;
+    }
+    
+    
+    .galeria{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .img{
+        height: 200px;
+
+    }
 }
 
 
