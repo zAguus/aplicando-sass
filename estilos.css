@@ -291,20 +291,40 @@ footer p{
 
 
 @media only screen and (max-width: 576px){
-    .lista_nav{
-        flex-direction: column;
-    }
     
-    
+
     .galeria{
-        flex-direction: column;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat (auto-fill, 1fr);
+        
+    
     }
 
     .img{
-        height: 200px;
-
+        display: grid;  
+        margin-top: 20px;
     }
+
+    .footer_perfumes{
+        margin-top: 350px;
+    }  
+}
+
+@media only screen  and (max-width: 949px){
+
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat (auto-fill, 2fr);
+    }
+    .img{
+        display: grid;  
+        margin-top: 20px;
+    }
+
+    .footer_perfumes{
+        margin-top: 350px;
+    } 
+    
 }
 
 
