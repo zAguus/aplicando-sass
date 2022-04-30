@@ -79,9 +79,25 @@
 
 
 footer{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    height: 38vh;
     text-align: center;
-    background-color: rgb(32, 30, 30);
+    justify-items: center;
+    padding: 1% 10%;
     height: 135px;
+    color: black;
+    background-color: grey;
+    height: 100%;
+}
+
+.footer_informacion{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.titulos_f{
+    color: black;
+    font-size: 20px;
 }
 
 footer i{
@@ -305,12 +321,15 @@ footer p{
         margin-top: 20px;
     }
 
-    .footer_perfumes{
-        margin-top: 350px;
-    }  
+    footer{
+        grid-template-columns: 1fr;
+        margin-top: 380px;
+    }
+
+     
 }
 
-@media only screen  and (max-width: 949px){
+@media only screen and (max-width: 949px){
 
     .galeria{
         display: grid;
@@ -321,9 +340,11 @@ footer p{
         margin-top: 20px;
     }
 
-    .footer_perfumes{
-        margin-top: 350px;
-    } 
+    footer{
+        margin-top: 380px;
+    }
+
+    
     
 }
 
