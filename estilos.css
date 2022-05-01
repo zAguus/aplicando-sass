@@ -4,9 +4,19 @@
     box-sizing: border-box;
 }
 
+
 .itemsdelnav{
     font-size: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.boton{
+    margin-bottom: 200px;
+    
+}
+
+.indicadores{
+    margin-bottom: 150px;
 }
 
 .cuerpo{
@@ -36,12 +46,13 @@
     align-items: center;
     height: 80%;
     margin: 0 auto;
-    background-color: white;
+    background-color: grey;
+    height: 350px;
 }
 
 .imgcarousel{
     width: 1440px;
-    height: 500px;
+    height: 350px;
 }
 
 
@@ -79,6 +90,7 @@
 
 
 footer{
+    border: 2px solid black;
     display: grid;
     grid-template-columns: repeat(3, 33%);
     text-align: center;
@@ -101,7 +113,7 @@ footer{
 footer i{
     margin-top: 35px ;
     font-size: 25px;
-    color: white;
+    color: black;
     margin-left: 5px;
 }
 
@@ -111,7 +123,7 @@ footer p{
     justify-content: center;
     margin-top: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
+    color: black;
 }
 
 .header_nav{
@@ -306,7 +318,26 @@ footer p{
 
 @media only screen and (max-width: 576px){
 
-   
+    .imgcarousel{
+        height: 200px;
+
+    }
+
+    .contenedor_padre{
+        height: 200px;
+    }
+
+    .boton{
+        margin-bottom: 300px;
+        
+    }
+    
+    .indicadores{
+        margin-bottom: 300px;
+    }
+
+
+
 
     .galeria{
         display: grid;
@@ -320,11 +351,7 @@ footer p{
 
     footer{
         grid-template-columns: 1fr;
-        margin-top: 200px;
-        border: 2px solid black;
-        
-    
-        
+        margin-top: 200px;  
     }
 
      
