@@ -81,11 +81,9 @@
 footer{
     display: grid;
     grid-template-columns: repeat(3, 33%);
-    height: 38vh;
     text-align: center;
     justify-items: center;
     padding: 1% 10%;
-    height: 135px;
     color: black;
     background-color: grey;
     height: 100%;
@@ -307,13 +305,12 @@ footer p{
 
 
 @media only screen and (max-width: 576px){
-    
+
+   
 
     .galeria{
         display: grid;
         grid-template-columns: repeat (auto-fill, 1fr);
-        
-    
     }
 
     .img{
@@ -323,7 +320,11 @@ footer p{
 
     footer{
         grid-template-columns: 1fr;
-        margin-top: 380px;
+        margin-top: 200px;
+        border: 2px solid black;
+        
+    
+        
     }
 
      
@@ -340,8 +341,12 @@ footer p{
         margin-top: 20px;
     }
 
-    footer{
+    .footer_perfumes{
         margin-top: 380px;
+    }
+
+    footer{
+        margin-top: 00px;
     }
 
     
