@@ -90,7 +90,7 @@
 
 
 footer{
-    border: 2px solid black;
+    
     display: grid;
     grid-template-columns: repeat(3, 33%);
     text-align: center;
@@ -319,24 +319,22 @@ footer p{
 @media only screen and (max-width: 576px){
 
     .imgcarousel{
-        height: 200px;
+        height: 300px;
 
     }
 
     .contenedor_padre{
-        height: 200px;
+        height: 300px;
     }
 
     .boton{
-        margin-bottom: 300px;
+        margin-bottom: 200px;
         
     }
     
     .indicadores{
-        margin-bottom: 300px;
+        margin-bottom: 200px;
     }
-
-
 
 
     .galeria{
