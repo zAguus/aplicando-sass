@@ -1,385 +1,333 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-
-.itemsdelnav{
-    font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.contenedor_padre {
+  background-size: cover;
+  justify-content: center;
+  background-position: center;
+  align-items: center;
+  height: 80%;
+  margin: 0 auto;
+  background-color: grey;
+  height: 350px;
+}
+.contenedor_padre .drop {
+  background-color: grey;
+}
+.contenedor_padre .itemsdelnav {
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contenedor_padre .boton {
+  margin-bottom: 200px;
+}
+.contenedor_padre .indicadores {
+  margin-bottom: 150px;
+}
+.contenedor_padre .cuerpo {
+  background-color: grey;
+}
+.contenedor_padre .nav-link {
+  animation-name: aparecer;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+.contenedor_padre .logodelnav {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  animation-name: aparecer;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
 }
 
-.boton{
-    margin-bottom: 200px;
-    
+.imgcarousel {
+  width: 1440px;
+  height: 350px;
 }
-
-.indicadores{
-    margin-bottom: 150px;
-}
-
-.cuerpo{
-    background-color: grey;
-}
-
-.nav-link{
-    animation-name: aparecer;
-    animation-duration: 2s;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-}
-
-.logodelnav{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    animation-name: aparecer;
-    animation-duration: 2s;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-}
-
-.contenedor_padre{
-    background-size: cover;
-    justify-content: center;
-    background-position: center;
-    align-items: center;
-    height: 80%;
-    margin: 0 auto;
-    background-color: grey;
-    height: 350px;
-}
-
-.imgcarousel{
-    width: 1440px;
-    height: 350px;
-}
-
 
 .carousel-inner {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
-.carousel-item{
-    position: relative;
-    display: none;
-    float: left;
-    width: 100%;
-    margin-right: -100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    transition: transform .4s ease-in-out;
-    height: 500px;
+.carousel-item {
+  position: relative;
+  display: none;
+  float: left;
+  width: 100%;
+  margin-right: -100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: transform 0.4s ease-in-out;
+  height: 500px;
 }
 
-.img:hover{
-    transform: scale(1.05);
-    transition: all 1s;
+.img:hover {
+  transform: scale(1.05);
+  transition: all 1s;
 }
 
-.img{
-    border-radius: 9px;
-    box-shadow: 0 0 10px grey;
+.img {
+  border-radius: 9px;
+  box-shadow: 0 0 10px grey;
 }
 
-.perfume{
-    border-radius: 7px;
+.perfume {
+  border-radius: 7px;
 }
 
-
-footer{
-    
-    display: grid;
-    grid-template-columns: repeat(3, 33%);
-    text-align: center;
-    justify-items: center;
-    padding: 1% 10%;
-    color: black;
-    background-color: grey;
-    height: 100%;
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  text-align: center;
+  justify-items: center;
+  padding: 1% 10%;
+  color: black;
+  background-color: grey;
+  height: 100%;
+}
+footer .footer_informacion {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer .titulos_f {
+  color: black;
+  font-size: 20px;
+}
+footer footer i {
+  margin-top: 35px;
+  font-size: 35px;
+  color: black;
+  margin-left: 5px;
+}
+footer footer p {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
 }
 
-.footer_informacion{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.header_nav {
+  width: auto;
+  height: 80px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
 }
 
-.titulos_f{
-    color: black;
-    font-size: 20px;
-}
-
-footer i{
-    margin-top: 35px ;
-    font-size: 25px;
-    color: black;
-    margin-left: 5px;
-}
-
-
-footer p{
-    display: flex;
-    justify-content: center;
-    margin-top: 5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
-}
-
-.header_nav{
-    width: auto;
-    height: 80px;
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-}
-
-.logo_nav{
-    color: white;
-    line-height: 80px;
-    font-size: 24px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    animation-name: aparecer;
-    animation-duration: 2s;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
+.logo_nav {
+  color: white;
+  line-height: 80px;
+  font-size: 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  animation-name: aparecer;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
 }
 
 @keyframes aparecer {
-    0%{
-        opacity: 0;
-    }
-
-    100%{
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.li_nav {
+  animation-name: aparecer;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
 }
 
-.li_nav{
-    animation-name: aparecer;
-    animation-duration: 2s;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
+.lista_nav {
+  display: flex;
+  list-style: none;
+  font-size: 15px;
+  line-height: 80px;
 }
 
-.lista_nav{
-    display: flex;
-    list-style: none;
-    font-size: 15px;
-    line-height: 80px;
-    
+.item_nav {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.item_nav{
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.li_nav:hover {
+  transform: scale(1.05);
+  transition: 1s;
 }
 
-.li_nav:hover{
-    transform: scale(1.05);
-    transition: 1s;
+.presentacion {
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://fraguru.com/mdimg/vijesties/o.5414.2.jpg);
+  width: auto;
+  height: 600px;
+  margin-top: 10px;
 }
 
-.presentacion{
-    background-position: center;
-    background-size: cover;
-    background-image: url(https://fraguru.com/mdimg/vijesties/o.5414.2.jpg);
-    width: auto;
-    height: 600px;
-    margin-top: 10px;
+.imagenp {
+  display: flex;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
 }
 
-.imagenp{
-    display: flex;
-    justify-content: center;
-    background-position: center;
-    background-size: cover;
+.zzz {
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  animation-name: aparecer;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  background-color: grey;
+}
+.zzz .imagen_logo {
+  display: flex;
+  height: 100px;
+  margin-top: -10px;
 }
 
-
-.zzz{
-    display: flex;
-    height: 80px;
-    justify-content: center;
-    animation-name: aparecer;
-    animation-duration: 2s;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    background-color: grey;
+.fa-solid {
+  color: white;
+  font-size: 20px;
 }
 
-.imagen_logo{
-    display: flex;
-    height: 100px;
-    margin-top: -10px;
+.galeria {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 800px;
+  margin-top: 10px;
+}
+.galeria .img {
+  border: 2px solid black;
+  height: 350px;
+  width: 300px;
+}
+.galeria .perfume {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  line-height: 50px;
+  background-color: black;
+}
+.galeria .img1 {
+  height: 300px;
+  background-image: url(https://eco-beauty.dior.com/dw/image/v2/BDGF_PRD/on/demandware.static/-/Sites-master_dior/default/dwe2a9df62/assets/Y0785220/Y0785220_F078524009_E01_GHC.jpg?sw=460&sh=498&sm=fit);
+  background-position: center;
+  background-size: cover;
+}
+.galeria .img2 {
+  height: 300px;
+  background-image: url(https://eco-beauty.dior.com/dw/image/v2/BDGF_PRD/on/demandware.static/-/Sites-master_dior/default/dwd7a2a66e/assets/Y0479201/Y0479201_engraving_es_ES.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.galeria .img3 {
+  height: 300px;
+  background-image: url(https://eco-beauty.dior.com/dw/image/v2/BDGF_PRD/on/demandware.static/-/Sites-master_dior/default/dw9e5fbfcc/assets/Y0996460/Y0996460_C099600755_E01_GHC.jpg?sw=460&sh=498&sm=fit);
+  background-position: center;
+  background-size: cover;
+}
+.galeria .img4 {
+  height: 300px;
+  background-image: url(https://prd-v3-i.chanel.com/fnbv3/image/full/chanel__com_type1/products_full/bleu-de-chanel-eau-de-toilette-spraybr.P107450.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.galeria .img5 {
+  height: 300px;
+  background-image: url(https://m.media-amazon.com/images/I/41pCO9VCKfL._SY355_.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.galeria .img6 {
+  height: 300px;
+  background-image: url(https://falabella.scene7.com/is/image/Falabella/6512483_1?wid=1500&hei=1500&qlt=70);
+  background-position: center;
+  background-size: cover;
+}
+.galeria .img7 {
+  height: 300px;
+  background-image: url(https://juleriaque.vteximg.com.br/arquivos/ids/183451-1000-1000/acqua-di-gio-profondo-lights-edp-edlimitada-0DB3E3BD71FCE1D098714AB98D895018.jpg?v=637807970476230000);
+  background-position: center;
+  background-size: cover;
+}
+.galeria .img8 {
+  height: 300px;
+  background-image: url(https://juleriaque.vteximg.com.br/arquivos/ids/164101-1000-1000/acqua-di-gio-homme-profumo-edt-63FDCA3269B62BB07DD7FD2A20497972.jpg?v=637347497157600000);
+  background-position: center;
+  background-size: cover;
+}
+.galeria .img9 {
+  height: 300px;
+  background-image: url(https://www.sephora.com/productimages/sku/s2054286-main-zoom.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
-.fa-solid{
-    color: white;
-    font-size: 20px;
-}
-
-
-.galeria{
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 800px;
-    margin-top: 10px;
-}
-
-.img{
-    border: 2px solid black;
-    height: 350px;
-    width: 300px;
-}
-
-.perfume{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-    display: flex;
-    justify-content: center;
-    line-height: 50px;
-    background-color: black;
-}
-
-.img1{
+@media only screen and (max-width: 576px) {
+  .imgcarousel {
     height: 300px;
-    background-image: url(https://eco-beauty.dior.com/dw/image/v2/BDGF_PRD/on/demandware.static/-/Sites-master_dior/default/dwe2a9df62/assets/Y0785220/Y0785220_F078524009_E01_GHC.jpg?sw=460&sh=498&sm=fit);
-    background-position: center;
-    background-size: cover;
-}
+  }
 
-.img2{
+  .contenedor_padre {
     height: 300px;
-    background-image: url(https://eco-beauty.dior.com/dw/image/v2/BDGF_PRD/on/demandware.static/-/Sites-master_dior/default/dwd7a2a66e/assets/Y0479201/Y0479201_engraving_es_ES.jpg);
-    background-position: center;
-    background-size: cover;
+  }
+
+  .boton {
+    margin-bottom: 200px;
+  }
+
+  .indicadores {
+    margin-bottom: 200px;
+  }
+
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat auto-fill, 1fr;
+  }
+
+  .img {
+    display: grid;
+    margin-top: 20px;
+  }
+
+  footer {
+    grid-template-columns: 1fr;
+    margin-top: 200px;
+  }
+}
+@media only screen and (max-width: 949px) {
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat auto-fill, 2fr;
+  }
+
+  .img {
+    display: grid;
+    margin-top: 20px;
+  }
+
+  .footer_perfumes {
+    margin-top: 380px;
+  }
+
+  footer {
+    margin-top: 0px;
+  }
 }
 
-.img3{
-    height: 300px;
-    background-image: url(https://eco-beauty.dior.com/dw/image/v2/BDGF_PRD/on/demandware.static/-/Sites-master_dior/default/dw9e5fbfcc/assets/Y0996460/Y0996460_C099600755_E01_GHC.jpg?sw=460&sh=498&sm=fit);
-    background-position: center;
-    background-size: cover;
-
-}
-
-.img4{
-    height: 300px;
-    background-image: url(https://prd-v3-i.chanel.com/fnbv3/image/full/chanel__com_type1/products_full/bleu-de-chanel-eau-de-toilette-spraybr.P107450.jpg);
-    background-position: center;
-    background-size: cover;
-
-}
-
-.img5{
-    height: 300px;
-    background-image: url(https://m.media-amazon.com/images/I/41pCO9VCKfL._SY355_.jpg);
-    background-position: center;
-    background-size: cover;
-
-}
-
-.img6{
-    height: 300px;
-    background-image: url(https://falabella.scene7.com/is/image/Falabella/6512483_1?wid=1500&hei=1500&qlt=70);
-    background-position: center;
-    background-size: cover;
-
-}
-
-.img7{
-    height: 300px;
-    background-image: url(https://juleriaque.vteximg.com.br/arquivos/ids/183451-1000-1000/acqua-di-gio-profondo-lights-edp-edlimitada-0DB3E3BD71FCE1D098714AB98D895018.jpg?v=637807970476230000);
-    background-position: center;
-    background-size: cover;
-
-}
-
-.img8{
-    height: 300px;
-    background-image: url(https://juleriaque.vteximg.com.br/arquivos/ids/164101-1000-1000/acqua-di-gio-homme-profumo-edt-63FDCA3269B62BB07DD7FD2A20497972.jpg?v=637347497157600000);
-    background-position: center;
-    background-size: cover;
-
-}
-
-.img9{
-    height: 300px;
-    background-image: url(https://www.sephora.com/productimages/sku/s2054286-main-zoom.jpg);
-    background-position: center;
-    background-size: cover;
-
-}
-
-
-@media only screen and (max-width: 576px){
-
-    .imgcarousel{
-        height: 300px;
-
-    }
-
-    .contenedor_padre{
-        height: 300px;
-    }
-
-    .boton{
-        margin-bottom: 200px;
-        
-    }
-    
-    .indicadores{
-        margin-bottom: 200px;
-    }
-
-
-    .galeria{
-        display: grid;
-        grid-template-columns: repeat (auto-fill, 1fr);
-    }
-
-    .img{
-        display: grid;  
-        margin-top: 20px;
-    }
-
-    footer{
-        grid-template-columns: 1fr;
-        margin-top: 200px;  
-    }
-
-     
-}
-
-@media only screen and (max-width: 949px){
-
-    .galeria{
-        display: grid;
-        grid-template-columns: repeat (auto-fill, 2fr);
-    }
-    .img{
-        display: grid;  
-        margin-top: 20px;
-    }
-
-    .footer_perfumes{
-        margin-top: 380px;
-    }
-
-    footer{
-        margin-top: 00px;
-    }
-
-    
-    
-}
-
-
-
-
-
-
+/*# sourceMappingURL=estilos.css.map */
