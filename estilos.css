@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+.imgcarousel {
+  width: 1440px;
+  height: 350px;
+}
+
 .contenedor_padre {
   background-size: cover;
   justify-content: center;
@@ -38,16 +43,10 @@
 }
 .contenedor_padre .logodelnav {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
   animation-name: aparecer;
   animation-duration: 2s;
   animation-delay: 0s;
   animation-iteration-count: 1;
-}
-
-.imgcarousel {
-  width: 1440px;
-  height: 350px;
 }
 
 .carousel-inner {
@@ -192,11 +191,6 @@ footer footer p {
   animation-iteration-count: 1;
   background-color: grey;
 }
-.zzz .imagen_logo {
-  display: flex;
-  height: 100px;
-  margin-top: -10px;
-}
 
 .fa-solid {
   color: white;
@@ -215,67 +209,37 @@ footer footer p {
   height: 350px;
   width: 300px;
 }
-.galeria .perfume {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: white;
-  display: flex;
-  justify-content: center;
-  line-height: 50px;
-  background-color: black;
-}
-.galeria .img1 {
+.galeria .img1, .galeria .img9, .galeria .img8, .galeria .img7, .galeria .img6, .galeria .img5, .galeria .img4, .galeria .img3, .galeria .img2 {
   height: 300px;
-  background-image: url(https://eco-beauty.dior.com/dw/image/v2/BDGF_PRD/on/demandware.static/-/Sites-master_dior/default/dwe2a9df62/assets/Y0785220/Y0785220_F078524009_E01_GHC.jpg?sw=460&sh=498&sm=fit);
   background-position: center;
   background-size: cover;
+}
+.galeria .img1, .galeria .img9, .galeria .img8, .galeria .img7, .galeria .img6, .galeria .img5, .galeria .img4, .galeria .img3, .galeria .img2 {
+  background-image: url(https://eco-beauty.dior.com/dw/image/v2/BDGF_PRD/on/demandware.static/-/Sites-master_dior/default/dwe2a9df62/assets/Y0785220/Y0785220_F078524009_E01_GHC.jpg?sw=460&sh=498&sm=fit);
 }
 .galeria .img2 {
-  height: 300px;
   background-image: url(https://eco-beauty.dior.com/dw/image/v2/BDGF_PRD/on/demandware.static/-/Sites-master_dior/default/dwd7a2a66e/assets/Y0479201/Y0479201_engraving_es_ES.jpg);
-  background-position: center;
-  background-size: cover;
 }
 .galeria .img3 {
-  height: 300px;
   background-image: url(https://eco-beauty.dior.com/dw/image/v2/BDGF_PRD/on/demandware.static/-/Sites-master_dior/default/dw9e5fbfcc/assets/Y0996460/Y0996460_C099600755_E01_GHC.jpg?sw=460&sh=498&sm=fit);
-  background-position: center;
-  background-size: cover;
 }
 .galeria .img4 {
-  height: 300px;
   background-image: url(https://prd-v3-i.chanel.com/fnbv3/image/full/chanel__com_type1/products_full/bleu-de-chanel-eau-de-toilette-spraybr.P107450.jpg);
-  background-position: center;
-  background-size: cover;
 }
 .galeria .img5 {
-  height: 300px;
   background-image: url(https://m.media-amazon.com/images/I/41pCO9VCKfL._SY355_.jpg);
-  background-position: center;
-  background-size: cover;
 }
 .galeria .img6 {
-  height: 300px;
   background-image: url(https://falabella.scene7.com/is/image/Falabella/6512483_1?wid=1500&hei=1500&qlt=70);
-  background-position: center;
-  background-size: cover;
 }
 .galeria .img7 {
-  height: 300px;
   background-image: url(https://juleriaque.vteximg.com.br/arquivos/ids/183451-1000-1000/acqua-di-gio-profondo-lights-edp-edlimitada-0DB3E3BD71FCE1D098714AB98D895018.jpg?v=637807970476230000);
-  background-position: center;
-  background-size: cover;
 }
 .galeria .img8 {
-  height: 300px;
   background-image: url(https://juleriaque.vteximg.com.br/arquivos/ids/164101-1000-1000/acqua-di-gio-homme-profumo-edt-63FDCA3269B62BB07DD7FD2A20497972.jpg?v=637347497157600000);
-  background-position: center;
-  background-size: cover;
 }
 .galeria .img9 {
-  height: 300px;
   background-image: url(https://www.sephora.com/productimages/sku/s2054286-main-zoom.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 @media only screen and (max-width: 576px) {
@@ -328,6 +292,22 @@ footer footer p {
   footer {
     margin-top: 0px;
   }
+}
+.perfume {
+  font-family: verdana;
+  color: white;
+  display: flex;
+  justify-content: center;
+  line-height: 50px;
+  background-color: grey;
+  border-radius: 7px;
+}
+
+.imagen_logo {
+  height: 100px;
+  background-color: grey;
+  display: flex;
+  margin-top: -10px;
 }
 
 /*# sourceMappingURL=estilos.css.map */

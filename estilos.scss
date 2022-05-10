@@ -4,6 +4,19 @@
     box-sizing: border-box;
 }
 
+$font1: Verdana, Geneva, Tahoma, sans-serif;
+
+$color1: grey;
+$color2: black;
+
+$animal: gato;
+
+
+.imgcarousel{
+    width: 1440px;
+    height: 350px;
+}
+
 .contenedor_padre{
     background-size: cover;
     justify-content: center;
@@ -11,17 +24,17 @@
     align-items: center;
     height: 80%;
     margin: 0 auto;
-    background-color: grey;
+    background-color: $color1;
     height: 350px;
 
     .drop{
-        background-color: grey;
+        background-color: $color1;
     }
     
     
     .itemsdelnav{
         font-size: 15px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: $font1;
     }
     
     .boton{
@@ -34,7 +47,7 @@
     }
     
     .cuerpo{
-        background-color: grey;
+        background-color: $color1;
     }
     
     .nav-link{
@@ -45,19 +58,13 @@
     }
     
     .logodelnav{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 20px;
+        font-family: $font1;
         animation-name: aparecer;
         animation-duration: 2s;
         animation-delay: 0s;
         animation-iteration-count: 1;
     }
     
-}
-
-.imgcarousel{
-    width: 1440px;
-    height: 350px;
 }
 
 
@@ -101,8 +108,8 @@ footer{
     text-align: center;
     justify-items: center;
     padding: 1% 10%;
-    color: black;
-    background-color: grey;
+    color: $color2;
+    background-color: $color1;
     height: 100%;
 
     .footer_informacion{
@@ -117,7 +124,7 @@ footer{
     footer i{
         margin-top: 35px ;
         font-size: 35px;
-        color: black;
+        color: $color2;
         margin-left: 5px;
     }
     
@@ -127,19 +134,22 @@ footer{
         justify-content: center;
         margin-top: 5px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: black;
+        color: $color2;
     }
 }
 
 .header_nav{
-    width: auto;
-    height: 80px;
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
+    @if $animal == gato {
+        width: auto;
+        height: 80px;
+        background-color: $color2;
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .logo_nav{
+    @if $animal == gato {
     color: white;
     line-height: 80px;
     font-size: 24px;
@@ -148,6 +158,7 @@ footer{
     animation-duration: 2s;
     animation-delay: 0s;
     animation-iteration-count: 1;
+ }
 }
 
 @keyframes aparecer {
@@ -168,18 +179,19 @@ footer{
 }
 
 .lista_nav{
-    display: flex;
-    list-style: none;
-    font-size: 15px;
-    line-height: 80px;
-    
+    @if $animal == gato{
+        display: flex;
+        list-style: none;
+        font-size: 15px;
+        line-height: 80px;
+    }    
 }
 
 .item_nav{
     color: white;
     text-decoration: none;
     margin: 0 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: $font1;
 }
 
 .li_nav:hover{
@@ -212,14 +224,7 @@ footer{
     animation-duration: 2s;
     animation-delay: 0s;
     animation-iteration-count: 1;
-    background-color: grey;
-
-    .imagen_logo{
-        display: flex;
-        height: 100px;
-        margin-top: -10px;
-    }
-    
+    background-color: $color1;  
 }
 
 .fa-solid{
@@ -241,83 +246,54 @@ footer{
         width: 300px;
     }
     
-    .perfume{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: white;
-        display: flex;
-        justify-content: center;
-        line-height: 50px;
-        background-color: black;
+    .img1{
+        height: 300px;
+        background-position: center;
+        background-size: cover;
     }
     
     .img1{
-        height: 300px;
         background-image: url(https://eco-beauty.dior.com/dw/image/v2/BDGF_PRD/on/demandware.static/-/Sites-master_dior/default/dwe2a9df62/assets/Y0785220/Y0785220_F078524009_E01_GHC.jpg?sw=460&sh=498&sm=fit);
-        background-position: center;
-        background-size: cover;
     }
     
     .img2{
-        height: 300px;
+        @extend .img1;
         background-image: url(https://eco-beauty.dior.com/dw/image/v2/BDGF_PRD/on/demandware.static/-/Sites-master_dior/default/dwd7a2a66e/assets/Y0479201/Y0479201_engraving_es_ES.jpg);
-        background-position: center;
-        background-size: cover;
     }
     
     .img3{
-        height: 300px;
+        @extend .img1;
         background-image: url(https://eco-beauty.dior.com/dw/image/v2/BDGF_PRD/on/demandware.static/-/Sites-master_dior/default/dw9e5fbfcc/assets/Y0996460/Y0996460_C099600755_E01_GHC.jpg?sw=460&sh=498&sm=fit);
-        background-position: center;
-        background-size: cover;
-    
     }
     
     .img4{
-        height: 300px;
+        @extend .img1;
         background-image: url(https://prd-v3-i.chanel.com/fnbv3/image/full/chanel__com_type1/products_full/bleu-de-chanel-eau-de-toilette-spraybr.P107450.jpg);
-        background-position: center;
-        background-size: cover;
-    
     }
     
     .img5{
-        height: 300px;
+        @extend .img1;
         background-image: url(https://m.media-amazon.com/images/I/41pCO9VCKfL._SY355_.jpg);
-        background-position: center;
-        background-size: cover;
-    
     }
     
     .img6{
-        height: 300px;
+        @extend .img1;
         background-image: url(https://falabella.scene7.com/is/image/Falabella/6512483_1?wid=1500&hei=1500&qlt=70);
-        background-position: center;
-        background-size: cover;
-    
     }
     
     .img7{
-        height: 300px;
+        @extend .img1;
         background-image: url(https://juleriaque.vteximg.com.br/arquivos/ids/183451-1000-1000/acqua-di-gio-profondo-lights-edp-edlimitada-0DB3E3BD71FCE1D098714AB98D895018.jpg?v=637807970476230000);
-        background-position: center;
-        background-size: cover;
-    
     }
     
     .img8{
-        height: 300px;
+        @extend .img1;
         background-image: url(https://juleriaque.vteximg.com.br/arquivos/ids/164101-1000-1000/acqua-di-gio-homme-profumo-edt-63FDCA3269B62BB07DD7FD2A20497972.jpg?v=637347497157600000);
-        background-position: center;
-        background-size: cover;
-    
     }
     
     .img9{
-        height: 300px;
+        @extend .img1;
         background-image: url(https://www.sephora.com/productimages/sku/s2054286-main-zoom.jpg);
-        background-position: center;
-        background-size: cover;
-    
     }
 }
 
@@ -382,3 +358,33 @@ footer{
     
     
 }
+
+
+$redes: (
+    color: grey,
+    letra: verdana,
+    center: center,
+);
+
+.perfume{
+    font-family: map-get($redes,letra) ;
+    color: white;
+    display: flex;
+    justify-content: map-get($redes,center);
+    line-height: 50px;
+    background-color: map-get($redes,color);
+    border-radius: 7px;
+}
+
+@mixin sizes ($heigth, $bcolor,) {
+    height: $heigth;
+    background-color: $bcolor
+}
+
+.imagen_logo{
+    @include sizes (100px, grey);
+    display: flex;
+    margin-top: -10px; 
+}
+
+
