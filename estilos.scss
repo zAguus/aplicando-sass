@@ -11,6 +11,34 @@ $color2: black;
 
 $animal: gato;
 
+.drop{
+    background-color: $color1;
+}
+
+
+.cuerpo{
+    background-color: $color1;
+}
+
+.import{
+    background-color: $color1;
+}
+
+.importadosdior{
+    text-align: center;
+    font-size: 28px;
+    font-family: $font1;
+    margin-top: 10px;
+}
+
+
+.importados{
+    text-align: center;
+    font-size: 28px;
+    font-family: $font1;
+    background-color: $color1;
+}
+
 
 .imgcarousel{
     width: 1440px;

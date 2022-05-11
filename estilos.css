@@ -4,6 +4,32 @@
   box-sizing: border-box;
 }
 
+.drop {
+  background-color: grey;
+}
+
+.cuerpo {
+  background-color: grey;
+}
+
+.import {
+  background-color: grey;
+}
+
+.importadosdior {
+  text-align: center;
+  font-size: 28px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 10px;
+}
+
+.importados {
+  text-align: center;
+  font-size: 28px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: grey;
+}
+
 .imgcarousel {
   width: 1440px;
   height: 350px;
