@@ -52,12 +52,6 @@
   font-size: 15px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.contenedor_padre .boton {
-  margin-bottom: 200px;
-}
-.contenedor_padre .indicadores {
-  margin-bottom: 150px;
-}
 .contenedor_padre .cuerpo {
   background-color: grey;
 }
@@ -73,6 +67,14 @@
   animation-duration: 2s;
   animation-delay: 0s;
   animation-iteration-count: 1;
+}
+
+.boton {
+  margin-bottom: 200px;
+}
+
+.indicadores {
+  margin-bottom: 150px;
 }
 
 .carousel-inner {
@@ -108,6 +110,7 @@
 }
 
 footer {
+  border: 2px solid black;
   display: grid;
   grid-template-columns: repeat(3, 33%);
   text-align: center;
@@ -223,6 +226,59 @@ footer footer p {
   font-size: 20px;
 }
 
+.lanzamientos {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.galeria_index {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 400px;
+  margin-top: 10px;
+}
+
+.img_index {
+  margin-top: 20px;
+  border: 2px solid black;
+  height: 350px;
+  width: 300px;
+  border-radius: 9px;
+  box-shadow: 0 0 10px grey;
+}
+
+.img_index:hover {
+  transform: scale(1.05);
+  transition: all 1s;
+}
+
+.img_perfume1 {
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://juleriaque.vteximg.com.br/arquivos/ids/184833-1000-1000/le-beau-le-parfum-intenso-C23087694C202E1BB803F3C3F802B97E.jpg?v=637853006359300000);
+}
+
+.img_perfume2 {
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://www.pacorabanne.com/medias/sys_master/images/images/h2d/h56/9335169253406/9335169253406.jpg);
+}
+
+.perfume_descrip {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  line-height: 50px;
+  background-color: black;
+  border-radius: 7px;
+}
+
 .galeria {
   display: flex;
   justify-content: space-evenly;
@@ -269,6 +325,10 @@ footer footer p {
 }
 
 @media only screen and (max-width: 576px) {
+  .img_index {
+    margin-left: 5px;
+  }
+
   .imgcarousel {
     height: 300px;
   }
@@ -282,7 +342,7 @@ footer footer p {
   }
 
   .indicadores {
-    margin-bottom: 200px;
+    margin-bottom: 210px;
   }
 
   .galeria {
@@ -325,7 +385,7 @@ footer footer p {
   display: flex;
   justify-content: center;
   line-height: 50px;
-  background-color: grey;
+  background-color: black;
   border-radius: 7px;
 }
 
