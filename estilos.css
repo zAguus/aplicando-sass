@@ -110,6 +110,7 @@
 }
 
 footer {
+  margin-top: 10px;
   border: 2px solid black;
   display: grid;
   grid-template-columns: repeat(3, 33%);
@@ -256,6 +257,7 @@ footer footer p {
 }
 
 .img_perfume1 {
+  border-radius: 7px;
   height: 300px;
   background-position: center;
   background-size: cover;
@@ -263,6 +265,7 @@ footer footer p {
 }
 
 .img_perfume2 {
+  border-radius: 7px;
   height: 300px;
   background-position: center;
   background-size: cover;
@@ -279,6 +282,51 @@ footer footer p {
   border-radius: 7px;
 }
 
+.img_regalos:hover {
+  transform: scale(1.05);
+  transition: all 1s;
+}
+
+.img_regalos {
+  border-radius: 7px;
+  margin-top: 10px;
+  border: 2px solid black;
+  height: 350px;
+  width: 300px;
+  box-shadow: 0 0 10px grey;
+}
+
+.img10 {
+  background-image: url(https://juleriaque.vteximg.com.br/arquivos/ids/185548-1000-1000/le-beau-le-parfum-intenso-014ECD8EEF8EB1A1C60DC8659A9A4E78.jpg?v=637877091350570000);
+}
+
+.img11 {
+  background-image: url(https://juleriaque.vteximg.com.br/arquivos/ids/184936-1000-1000/polo-blue-edp-D068A5C1ED06BE416C856D8C11822EA9.jpg?v=637854734839500000);
+}
+
+.img12 {
+  background-image: url(https://juleriaque.vteximg.com.br/arquivos/ids/179673-1000-1000/scandal-pour-homme-edt-100-ml-mas-bolso-883CE8FF53FCB39E5525B9DE5533005F.jpg?v=637716387573930000);
+}
+
+.img13 {
+  background-image: url(https://juleriaque.vteximg.com.br/arquivos/ids/184110-1000-1000/bad-boy-edt-9E4D50EF500323F3DD44B095A054F02C.jpg?v=637832414981430000);
+}
+
+.img14 {
+  background-image: url(https://juleriaque.vteximg.com.br/arquivos/ids/175150-1000-1000/acqua-di-gio-homme-absolu-edp-B28CE3BD434F81A8BFF60A0CFDEBFAA6.jpg?v=637618862378200000);
+}
+
+.img15 {
+  background-image: url(https://juleriaque.vteximg.com.br/arquivos/ids/176310-1000-1000/ck-defy-edt--7BC3A6CE9A78BB9A71C1099AB3FACDF9.jpg?v=637653314529800000);
+}
+
+.img1, .galeria .img9, .galeria .img8, .galeria .img7, .galeria .img6, .galeria .img5, .galeria .img4, .galeria .img3, .galeria .img2, .img10, .img11, .img12, .img13, .img14, .img15 {
+  border-radius: 7px;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+}
+
 .galeria {
   display: flex;
   justify-content: space-evenly;
@@ -291,36 +339,40 @@ footer footer p {
   height: 350px;
   width: 300px;
 }
-.galeria .img1, .galeria .img9, .galeria .img8, .galeria .img7, .galeria .img6, .galeria .img5, .galeria .img4, .galeria .img3, .galeria .img2 {
-  height: 300px;
-  background-position: center;
-  background-size: cover;
-}
-.galeria .img1, .galeria .img9, .galeria .img8, .galeria .img7, .galeria .img6, .galeria .img5, .galeria .img4, .galeria .img3, .galeria .img2 {
+.galeria .img1, .galeria .img9, .galeria .img8, .galeria .img7, .galeria .img6, .galeria .img5, .galeria .img4, .galeria .img3, .galeria .img2, .galeria .img10, .galeria .img11, .galeria .img12, .galeria .img13, .galeria .img14, .galeria .img15 {
+  border-radius: 7px;
   background-image: url(https://eco-beauty.dior.com/dw/image/v2/BDGF_PRD/on/demandware.static/-/Sites-master_dior/default/dwe2a9df62/assets/Y0785220/Y0785220_F078524009_E01_GHC.jpg?sw=460&sh=498&sm=fit);
 }
 .galeria .img2 {
+  border-radius: 7px;
   background-image: url(https://eco-beauty.dior.com/dw/image/v2/BDGF_PRD/on/demandware.static/-/Sites-master_dior/default/dwd7a2a66e/assets/Y0479201/Y0479201_engraving_es_ES.jpg);
 }
 .galeria .img3 {
+  border-radius: 7px;
   background-image: url(https://eco-beauty.dior.com/dw/image/v2/BDGF_PRD/on/demandware.static/-/Sites-master_dior/default/dw9e5fbfcc/assets/Y0996460/Y0996460_C099600755_E01_GHC.jpg?sw=460&sh=498&sm=fit);
 }
 .galeria .img4 {
+  border-radius: 7px;
   background-image: url(https://prd-v3-i.chanel.com/fnbv3/image/full/chanel__com_type1/products_full/bleu-de-chanel-eau-de-toilette-spraybr.P107450.jpg);
 }
 .galeria .img5 {
+  border-radius: 7px;
   background-image: url(https://m.media-amazon.com/images/I/41pCO9VCKfL._SY355_.jpg);
 }
 .galeria .img6 {
+  border-radius: 7px;
   background-image: url(https://falabella.scene7.com/is/image/Falabella/6512483_1?wid=1500&hei=1500&qlt=70);
 }
 .galeria .img7 {
+  border-radius: 7px;
   background-image: url(https://juleriaque.vteximg.com.br/arquivos/ids/183451-1000-1000/acqua-di-gio-profondo-lights-edp-edlimitada-0DB3E3BD71FCE1D098714AB98D895018.jpg?v=637807970476230000);
 }
 .galeria .img8 {
+  border-radius: 7px;
   background-image: url(https://juleriaque.vteximg.com.br/arquivos/ids/164101-1000-1000/acqua-di-gio-homme-profumo-edt-63FDCA3269B62BB07DD7FD2A20497972.jpg?v=637347497157600000);
 }
 .galeria .img9 {
+  border-radius: 7px;
   background-image: url(https://www.sephora.com/productimages/sku/s2054286-main-zoom.jpg);
 }
 
@@ -335,7 +387,69 @@ footer footer p {
   font-size: 18px;
 }
 
-@media only screen and (max-width: 576px) {
+.galeria_regalos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.vermas {
+  display: grid;
+  justify-items: center;
+}
+
+.regalos_ver {
+  background-color: black;
+  display: grid;
+  border: 2px black solid;
+  width: 100px;
+  justify-items: center;
+  margin-top: 10px;
+}
+
+.regalos {
+  text-decoration: none;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.regalos:hover {
+  color: white;
+  transform: scale(1.05);
+  transition: all 1s;
+}
+
+.img_perfume3 {
+  border-radius: 7px;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://juleriaque.vteximg.com.br/arquivos/ids/184638-1000-1000/one-million-elixir-edp-129F4249F59AD9A631999AC416E636FE.jpg?v=637848578771730000);
+}
+
+.img_perfume4 {
+  border-radius: 7px;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://juleriaque.vteximg.com.br/arquivos/ids/184936-1000-1000/polo-blue-edp-D068A5C1ED06BE416C856D8C11822EA9.jpg?v=637854734839500000);
+}
+
+@media only screen and (max-width: 625px) {
+  .footer_regalos {
+    margin-top: 20px;
+  }
+
+  .footer_perfumes {
+    margin-top: 340px;
+  }
+
+  .galeria_regalos {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
   .iniciar__contenedor2 {
     color: white;
     display: flex;
@@ -381,7 +495,17 @@ footer footer p {
     margin-top: 200px;
   }
 }
-@media only screen and (max-width: 949px) {
+@media (min-width: 626px) and (max-width: 949px) {
+  .footer_regalos {
+    margin-top: 10px;
+  }
+
+  .galeria_regalos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+
   .iniciar__contenedor2 {
     color: white;
     display: flex;
@@ -393,7 +517,8 @@ footer footer p {
 
   .galeria {
     display: grid;
-    grid-template-columns: repeat auto-fill, 2fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
   }
 
   .img {
