@@ -9,11 +9,11 @@
 }
 
 .cuerpo {
-  background-color: grey;
+  background-color: white;
 }
 
 .import {
-  background-color: grey;
+  background-color: white;
 }
 
 .importadosdior {
@@ -27,7 +27,7 @@
   text-align: center;
   font-size: 28px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: grey;
+  background-color: white;
 }
 
 .imgcarousel {
@@ -107,6 +107,12 @@
 
 .perfume {
   border-radius: 7px;
+}
+
+.fa-brands, .fab {
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 900;
+  font-size: 24px;
 }
 
 footer {
@@ -328,8 +334,9 @@ footer footer p {
 }
 
 .galeria {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
   width: 100%;
   height: 800px;
   margin-top: 10px;
@@ -435,13 +442,13 @@ footer footer p {
   background-image: url(https://juleriaque.vteximg.com.br/arquivos/ids/184936-1000-1000/polo-blue-edp-D068A5C1ED06BE416C856D8C11822EA9.jpg?v=637854734839500000);
 }
 
-@media only screen and (max-width: 625px) {
+@media (min-width: 320px) and (max-width: 625px) {
   .footer_regalos {
     margin-top: 20px;
   }
 
   .footer_perfumes {
-    margin-top: 340px;
+    margin-top: 1450px;
   }
 
   .galeria_regalos {
@@ -482,7 +489,7 @@ footer footer p {
 
   .galeria {
     display: grid;
-    grid-template-columns: repeat auto-fill, 1fr;
+    grid-template-columns: 1fr;
   }
 
   .img {
@@ -517,7 +524,7 @@ footer footer p {
 
   .galeria {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-items: center;
   }
 

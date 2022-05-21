@@ -8,6 +8,7 @@ $font1: Verdana, Geneva, Tahoma, sans-serif;
 
 $color1: grey;
 $color2: black;
+$color3: white;
 
 $animal: gato;
 
@@ -17,11 +18,11 @@ $animal: gato;
 
 
 .cuerpo{
-    background-color: $color1;
+    background-color: $color3;
 }
 
 .import{
-    background-color: $color1;
+    background-color: $color3;
 }
 
 .importadosdior{
@@ -36,7 +37,7 @@ $animal: gato;
     text-align: center;
     font-size: 28px;
     font-family: $font1;
-    background-color: $color1;
+    background-color: $color3;
 }
 
 
@@ -129,6 +130,11 @@ $animal: gato;
     border-radius: 7px;
 }
 
+.fa-brands, .fab {
+    font-family: "Font Awesome 6 Brands";
+    font-weight: 900;
+    font-size: 24px;
+}
 
 footer{
     margin-top: 10px;
@@ -373,8 +379,9 @@ footer{
 }
 
 .galeria{
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
     width: 100%;
     height: 800px;
     margin-top: 10px;
@@ -500,14 +507,14 @@ footer{
 }
 
 
-@media only screen and (max-width: 625px){
+@media  (min-width: 320px) and (max-width: 625px){
 
     .footer_regalos{
         margin-top: 20px;
     }
 
     .footer_perfumes{
-        margin-top: 340px;
+        margin-top: 1450px;
     }
 
     .galeria_regalos{
@@ -552,7 +559,7 @@ footer{
 
     .galeria{
         display: grid;
-        grid-template-columns: repeat (auto-fill, 1fr);
+        grid-template-columns: 1fr;
     }
 
     .img{
@@ -590,7 +597,7 @@ footer{
 
     .galeria{
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         justify-items: center;
     }
     .img{
