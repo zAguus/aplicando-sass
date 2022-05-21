@@ -136,6 +136,7 @@ $animal: gato;
     font-size: 24px;
 }
 
+
 footer{
     margin-top: 10px;
     border: 2px solid black;
@@ -174,6 +175,19 @@ footer{
     }
 }
 
+footer{
+    margin-top: 10px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    text-align: center;
+    justify-items: center;
+    padding: 1% 10%;
+    color: $color2;
+    background-color: $color1;
+    height: 100%;
+    }
+    
 .header_nav{
     @if $animal == gato {
         width: auto;
@@ -509,6 +523,10 @@ footer{
 
 @media  (min-width: 320px) and (max-width: 625px){
 
+    .footer{
+        height: 600px;
+    }
+    
     .footer_regalos{
         margin-top: 20px;
     }

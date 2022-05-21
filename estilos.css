@@ -148,6 +148,19 @@ footer footer p {
   color: black;
 }
 
+footer {
+  margin-top: 10px;
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  text-align: center;
+  justify-items: center;
+  padding: 1% 10%;
+  color: black;
+  background-color: grey;
+  height: 100%;
+}
+
 .header_nav {
   width: auto;
   height: 80px;
@@ -443,6 +456,10 @@ footer footer p {
 }
 
 @media (min-width: 320px) and (max-width: 625px) {
+  .footer {
+    height: 600px;
+  }
+
   .footer_regalos {
     margin-top: 20px;
   }
